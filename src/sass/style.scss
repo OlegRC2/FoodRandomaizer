@@ -1,0 +1,139 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+@import 'libs/animate';
+
+.container {
+    position: relative;
+    max-width: 950px;
+    height: 745px;
+    margin: 0 auto;
+}
+
+.main {
+    height: 900px;
+    background: url(../img/bg1.jpg) no-repeat center;
+    background-size: cover;
+    background-color: rgba(0,0,0,.6);
+    background-blend-mode: darken;
+    color: white;
+}
+
+.triangle-white {
+    height: 10px;
+    background: url(../img/triangle_bg.png) repeat-x;
+    background-size: 26px 10px;
+}
+
+.triangle-black {
+    height: 10px;
+    background: url(../img/triangle_bg_black.png) repeat-x;
+    background-size: 26px 10px;
+    margin-top: -2px;
+    opacity: .4;
+}
+    
+.header {
+    background-color: rgba(0,0,0,.4);
+    background-blend-mode: darken;
+    color: white;
+    height: 110px;
+    position: relative;
+    &__official {
+        font-family: 'Beyond The Mountains';
+        font-size: 65px;
+        text-align: center;
+        padding-top: 15px;
+    }
+    &__sign {
+        position: absolute;
+        display: block;
+        margin-top: -30px;
+        margin-left: 1260px;
+    }
+}
+
+.main-window {
+    height: 500px;
+    &__header {
+        text-align: center;
+        margin-top: 35px;
+        font-family: 'Comfortaa';
+        font-weight: 700;
+        font-size: 50px;
+    }
+    &__subheader {
+        text-align: center;
+        font-family: 'Comfortaa';
+        font-weight: 700;
+        font-size: 35px;
+    }
+    &__attention {
+        text-align: center;
+        font-family: 'Comfortaa';
+        font-weight: 700;
+        font-size: 35px;
+    }
+    &__decsription {
+        text-align: center;
+        font-family: 'Comfortaa';
+        font-weight: 300;
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    &__warn {
+        text-align: center;
+        font-family: 'Comfortaa';
+        font-weight: 300;
+        font-size: 20px;
+        margin-top: 25px;
+    }
+    &__button-wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__answer {
+        text-align: center;
+        margin-top: 30px;
+    }
+    &__answer-text {
+        text-align: center;
+        font-family: 'Comfortaa';
+        font-weight: 500;
+        font-size: 25px;
+    }
+    &__answer-final {
+        text-align: center;
+        font-family: 'Comfortaa';
+        font-weight: 700;
+        font-size: 35px;
+        margin-top: 30px;
+    }
+    &__answer-repeat {
+        text-align: center;
+        font-family: 'Comfortaa';
+        font-weight: 300;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+}
+
+.button {
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #c70101;
+    border: none;
+    color: #fff;
+    font-family: 'Comfortaa';
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+    &:hover {
+        box-shadow: 4px 4px 20px #c70101;
+        border: none; 
+    }
+    &:focus {
+        outline: none;
+    }
+}
